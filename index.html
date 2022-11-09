@@ -136,7 +136,7 @@
                                 .then(json => result_refund = json)
                                 .catch(err => error_refund = err);
                             if (error_refund) return alert('Error in checking the refund status');
-                            return alert ('TRANSACTION HAS BEEN REFUNDED.');
+                            return alert ('We’ve sent a refund request to the Celer network which is not confirmed yet. Please click on “Check For Refund” again in 30 secs to verify');
                         }
                         if (status === 7) return alert ('Celer Bridge is initiating the refund request. Please Wait for a few mins and then click on claim ...');
                         if (status === 8) return alert ('Please click on "Claim your refund" to start your refund process. You will be asked to do a transaction.');
