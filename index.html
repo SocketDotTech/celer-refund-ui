@@ -245,6 +245,7 @@
                                 await tx.wait();
                                 return alert ('Refund has been successful. Please Check your wallet.');
                             } catch (error) {
+                              console.log(error);
                                 return alert('Error occured in claiming process: ', error.message);
                             }
                         }
