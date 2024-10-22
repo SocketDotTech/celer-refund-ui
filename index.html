@@ -234,6 +234,7 @@
                             const powers = _powers.map((item) => {
                                 return ethers.utils.base64.decode(item);
                             });
+                          console.log({wdmsg,signers,sigs, powers});
                             try {
                                 const socketCelerImpl = new ethers.Contract(
                                     socketCelerImplAddresses[chainId],
